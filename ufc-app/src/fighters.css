@@ -1,0 +1,58 @@
+/* fighters.css */
+.fighter-card {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #ffffff24;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.fighter-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.fighter-info {
+  flex: 1;
+}
+
+/* NICKNAME */
+.fighter-info-nickname {
+  margin: 0;
+  font-size: 20px;
+  color: #333;
+  font-style: italic;
+}
+
+/* NAME */
+.fighter-info-name {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-style: italic;
+}
+
+/* REST OF INFO */
+.fighter-info {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #666;
+  font-family: "Contrail One", cursive;
+}
+.fighter-card:hover {
+  background-color: rgba(
+    227,
+    217,
+    217,
+    0.741
+  ); /* Change background color on hover */
+  color: white; /* Change text color on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
