@@ -38,7 +38,7 @@ const App = () => {
   useEffect(() => {
     const fetchFightersData = async () => {
       try {
-        const response = await fetch("http://localhost:3000/api/fighters")
+        const response = await fetch("http://3.95.185.12:3000/api/fighters")
         if (!response.ok) {
           throw new Error("Network response was not ok")
         }
@@ -65,7 +65,7 @@ const App = () => {
     const checkScrapingStatus = async () => {
       try {
         const response = await fetch(
-          "http://localhost:3000/api/isScrapingComplete"
+          "http://3.95.185.12:3000/api/isScrapingComplete"
         )
         if (!response.ok) {
           throw new Error("Network response was not ok")
